@@ -1,0 +1,2 @@
+
+insert into xpkuchari( meno, heslo) VALUES (%s,%s)

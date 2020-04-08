@@ -1,0 +1,7 @@
+
+
+
+create table XPcasnici(id serial, meno varchar, heslo varchar);
+
+
+create table XPkuchari(id serial primary key, meno varchar, heslo varchar );
