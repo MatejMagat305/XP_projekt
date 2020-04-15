@@ -17,3 +17,11 @@ class ConnectionError(Exception):
 
     def getMesenge(self):
         return self.mesange
+
+    
+class NotLogIn(Exception):
+    def __init__(self, mesange):
+        self.mesange = mesange
+
+    def getMesenge(self):
+        return self.mesange
