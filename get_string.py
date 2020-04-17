@@ -9,7 +9,7 @@ class get_string:
                 return name, coding().hash_password(password)
             except getpass.GetPassWarning :
                 print("nepodarilo sa skus este raz zadat")
-                return self.get_name_password()
+                return self.get_string_and_sifr(apply_first, apply_second)
 
     def get_one_string(self, apply_string):
         return input(apply_string)
