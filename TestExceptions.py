@@ -9,6 +9,7 @@ class FileNotFound(Exception):
         self.message = message
     def getMessage(self):
         return self.message
+   
 
 
 class ConnectionError(Exception):
@@ -25,3 +26,35 @@ class NotLogIn(Exception):
 
     def getMesenge(self):
         return self.mesange
+
+ class FileNotFound(Exception):
+
+    def __init__(self, message):
+        self.message = message
+
+    def getMessage(self):
+        return self.message
+
+
+class StornoWrongCount(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def getMessage(self):
+        return self.message
+
+
+class WrongCountDone(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def getMessage(self):
+        return self.message
+
+
+class FoodNotExists(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def getMessage(self):
+        return self.message
