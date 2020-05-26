@@ -9,6 +9,8 @@ class fake_Conection_database(Connection):
         self.good_sql_query_script=""
         self.good_inserted_values_query=(1,1)
         self.result = set([1,2,3])
+        self.values = {}
+        self.increment = 1
 
     
     def close(self):
@@ -16,13 +18,11 @@ class fake_Conection_database(Connection):
 
     def execute(self, script, inserted_values):
         if script !=  self.good_sql_exe_script:
-            if inserted_values != self.good_inserted_values_exe:
-                raise ConnectionError("error") 
+                raise ConnectionError("error")
+        self.values.put((inserted_values,self.increment)) 
 
     def executeQuery(self, script, inserted_values):
        if good_sql_query_script == script:
-           if good_inserted_values_query == inserted_values:
-               return self.result
-       return set()
+           return self.values.get(inserted_values,[])
+       return []
 
-connection = fake_Conection_database()
