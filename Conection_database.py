@@ -25,20 +25,38 @@ class Connection:
             
     def execute(self, script, inserted_values):
         try:
-            connection = self.connection_pool.getconn()
-            if connection == None:
+            connection0 = self.connection_pool.getconn()
+            if connection0 == None:
                 raise ConnectionError("Nepodarilo sa ziskat spojenie.")
-            cursor = connection.cursor()              
+            cursor = connection0.cursor()              
             cursor.execute(script, inserted_values)
             
-            connection.commit()
-            connection.close()
-            self.connection_pool.putconn(connection)
+            connection0.commit()
+            
 
         except(Exception, psycopg2.Error) as error:
             raise ConnectionError(error.__str__())
+        finally:
+            if(connection0):
+                connection.close()
+                self.connection_pool.putconn(connection)
         
     def executeQuery(self, script, inserted_values):
-        pass
+        try:
+            connection0 = self.connection_pool.getconn()
+            if connection0 == None:
+                raise ConnectionError("Nepodarilo sa ziskat spojenie.")
+            cursor = connection0.cursor()              
+            cursor.execute(script, inserted_values)
+            returns_value= cursor.fetchall()
+            connection0.commit()
+            return  returns_value           
+
+        except(Exception, psycopg2.Error) as error:
+            raise ConnectionError(error.__str__())
+        finally:
+            if(connection0):
+                connection.close()
+                self.connection_pool.putconn(connection)
 
 connection = Connection()
