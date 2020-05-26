@@ -21,7 +21,9 @@ card 11
 
 # kto zatial urobil co:
 Matej - 1,2
+#
 Feri - karticka 9,10,11
+#
 Marek - 
 
 # berieme si:
