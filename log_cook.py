@@ -1,13 +1,15 @@
 
 from log_in_upper_class import log_in
 from TestExceptions import NotLogIn
-from get_string import get_string
+from get_Boolean import get_Boolean
 
-class cook_log(log_in):
+class log_cook(log_in):
     def __init__(self):
-        super.__init__("log_cook.txt")
+        log_in.__init__(self,"log_cook.txt")
 
     def log_in(self):
-        id0=super.log_in()
+            if get_Boolean().get("naozaj sa chces prihlásiť ako časník?"):
+               return log_in.log_in(self)
+            return None
         
         

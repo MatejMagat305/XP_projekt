@@ -2,6 +2,7 @@
 
 from Conection_database import Connection
 from get_Boolean import get_Boolean
+from get_string import get_string
 
 class registration:
     def __init__(self):

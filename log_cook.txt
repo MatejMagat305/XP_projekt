@@ -1,0 +1,2 @@
+
+select id from xpcasnici where meno= %s and heslo= ''|| %s

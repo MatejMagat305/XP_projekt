@@ -1,16 +1,5 @@
 # XP_projekt
 
-Máme urobiť Kartičky číslo 1,2,3,4,5,8,9,10,11,12,16
-Cize urobit:
-- Registraciu kucharov a casnikov (karticky 1,2)
-- Prihlasovanie kucharov a casnikov (karticky 3,4)
-- Urobit prepojenie s databázou do a z nej (karticka 5 a 16)
-- Zobrazit ponuku jedal (karticka 8)
-- Prijat a Stornovať objednávku; (karticka 9 a 10)
-- Zobrazit info o stole (karticka 11)
-- Vyplatit ucet (karticka 12)
-
-
 # máme:
 
 card 01
@@ -19,14 +8,7 @@ card 09
 card 10
 card 11
 
-# kto zatial urobil ake karticky:
-Matej - karticky 1,2
-#
-Feri - karticky 9,10,11
-#
-Marek - 
-
 # berieme si:
-kto       čo       odkedy   dokedy
+kto       čo
 #
 Maťo     card 3        pracujem od 26.5.2020 do 27.5.2020
