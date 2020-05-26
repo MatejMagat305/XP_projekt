@@ -8,7 +8,6 @@ class cook_log(log_in):
         super.__init__("log_cook.txt")
 
     def log_in(self):
-        name, password = get_string().get_string_and_sifr(apply_name, apply_password)
         id0=super.log_in()
         
         
