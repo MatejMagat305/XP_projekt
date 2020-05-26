@@ -3,7 +3,7 @@
 Máme urobiť Kartičky číslo 1,2,3,4,5,8,9,10,11,12,16 Cize urobit:
 - Registraciu kucharov a casnikov (karticky 1,2)
 - Prihlasovanie kucharov a casnikov (karticky 3,4)
-- Urobit prepojenie s databázou do a z nej (karticka 5 a 16)
+- Urobit prepojenie s databázou do a z nej (karticka 5 a 16) - už čiastočne sú v triede database_connection
 - Zobrazit ponuku jedal (karticka 8)
 - Prijat a Stornovať objednávku; (karticka 9 a 10)
 - Zobrazit info o stole (karticka 11)
@@ -15,12 +15,12 @@ Máme urobiť Kartičky číslo 1,2,3,4,5,8,9,10,11,12,16 Cize urobit:
 - card 10 
 - card 11
 # kto zatial urobil ake karticky:
-- Matej - karticky 1,2
+- Matej - karticky 1,2,3,4
 
 - Feri - karticky 9,10,11
 
-Marek -
+- Marek -
 # berieme si:
-# kto čo odkedy dokedy
+#### kto čo odkedy dokedy
 
-Maťo card 3 pracujem od 26.5.2020 do 27.5.2020
+
