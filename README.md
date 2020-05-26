@@ -10,7 +10,9 @@ Máme urobiť Kartičky číslo 1,2,3,4,5,8,9,10,11,12,16 Cize urobit:
 - Vyplatit ucet (karticka 12)
 # máme:
 - card 01
-- card 02 
+- card 02
+- card 03
+- card 04
 - card 09 
 - card 10 
 - card 11
