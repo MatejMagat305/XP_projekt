@@ -9,6 +9,6 @@ card 10
 card 11
 
 # berieme si:
-kto       čo
+kto       čo       odkedy   dokedy
 #
 Maťo     card 3        pracujem od 26.5.2020 do 27.5.2020
