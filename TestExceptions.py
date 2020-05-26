@@ -27,7 +27,7 @@ class NotLogIn(Exception):
     def getMesenge(self):
         return self.mesange
 
- class FileNotFound(Exception):
+class FileNotFound(Exception):
 
     def __init__(self, message):
         self.message = message
