@@ -1,7 +1,10 @@
 
+create table XPcasnici(id serial primary key ,
+ meno varchar,
+  heslo varchar,
+  constraint MH unique (meno, heslo));
 
 
-create table XPcasnici(id serial, meno varchar, heslo varchar);
-
-
-create table XPkuchari(id serial primary key, meno varchar, heslo varchar );
+create table XPkuchari(id serial primary key,
+meno varchar, heslo varchar,
+                       constraint ME unique (meno, heslo));
