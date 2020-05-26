@@ -38,8 +38,8 @@ class Connection:
             raise ConnectionError(error.__str__())
         finally:
             if(connection0):
-                connection.close()
-                self.connection_pool.putconn(connection)
+                connection0.close()
+                self.connection_pool.putconn(connection0)
         
     def executeQuery(self, script, inserted_values):
         try:
@@ -56,7 +56,6 @@ class Connection:
             raise ConnectionError(error.__str__())
         finally:
             if(connection0):
-                connection.close()
-                self.connection_pool.putconn(connection)
+                connection0.close()
+                self.connection_pool.putconn(connection0)
 
-connection = Connection()

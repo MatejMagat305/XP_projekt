@@ -3,9 +3,9 @@ from log_in_upper_class import log_in
 from TestExceptions import NotLogIn
 from get_Boolean import get_Boolean
 
-class log_cook(log_in):
+class log_waiter(log_in):
     def __init__(self):
-        log_in.__init__(self,"log_cook.txt")
+        log_in.__init__(self,"log_waiter.txt")
 
     def log_in(self):
             if get_Boolean().get("naozaj sa chces prihlásiť ako časník?"):
@@ -14,4 +14,5 @@ class log_cook(log_in):
         
 
 if __name__ == '__main__':        
-    log_cook().log_in()
+    log_waiter().log_in()
+
