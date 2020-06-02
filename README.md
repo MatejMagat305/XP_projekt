@@ -16,8 +16,9 @@ Máme urobiť Kartičky číslo 1,2,3,4,5,8,9,10,11,12,16 Cize urobit:
 - card 09 
 - card 10 
 - card 11
+- (hlavne menu)
 # kto zatial urobil ake karticky:
-- Matej - karticky 1,2,3,4
+- Matej - karticky 1,2,3,4, (hlavne menu)
 
 - Feri - karticky 9,10,11
 
