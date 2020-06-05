@@ -25,5 +25,5 @@ Máme urobiť Kartičky číslo 1,2,3,4,5,8,9,10,11,12,16 Cize urobit:
 - Marek -
 # berieme si:
 #### kto čo odkedy dokedy
-
+Marek - 8, 12
 
