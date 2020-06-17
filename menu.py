@@ -9,7 +9,7 @@ class menu:
     admin_menu = 3
     finish_menu = 4
     error = "chyba nepoznám príkaz"
-    welcome = "vytaj v systeme"
+    welcome = "vitaj v systeme"
     wiatress = "ak chceš vojsť do menu pre časníkov zadaj: {}"
     cook = "ak chceš vojsť do menu pre kuhárov zadaj: {}"
     admin = "ak chceš vojsť do menu pre admina zadaj: {}"
@@ -20,6 +20,8 @@ class menu:
         self.w = menu_waitress()
         self.c = menu_cook()
         self.a = menu_admin()
+
+        
     def start(self):
         while True:
             self.print_menu()
@@ -36,10 +38,11 @@ class menu:
             else:
                 print(self.error)
 
+
     def get_answer(self):
         while True:
             try:
-                return int(input())
+                return int(input("Akcia> "))
             except ValueError:
                 print(self.bad_input)
 

@@ -1,10 +1,58 @@
+DROP TABLE IF EXISTS XPcasnici;
+CREATE TABLE XPcasnici
+(
+	id serial primary key,
+	meno varchar,
+	heslo varchar,
+	constraint MH unique (meno, heslo)
+);
 
-create table XPcasnici(id serial primary key ,
- meno varchar,
-  heslo varchar,
-  constraint MH unique (meno, heslo));
+
+DROP TABLE IF EXISTS XPkuchari;
+CREATE TABLE XPkuchari
+(
+	id serial primary key,
+	meno varchar,
+	heslo varchar,
+	constraint ME unique (meno, heslo)
+);
 
 
-create table XPkuchari(id serial primary key,
-meno varchar, heslo varchar,
-                       constraint ME unique (meno, heslo));
+DROP TABLE IF EXISTS XPstol CASCADE;
+CREATE TABLE XPstol
+(
+	id serial primary key
+);
+
+INSERT INTO XPstol (id)
+VALUES (1), (2), (3), (4), (5);
+
+
+DROP TABLE IF EXISTS XPmenu CASCADE;
+CREATE TABLE XPmenu
+(
+	id serial primary key,
+	nazov varchar,
+	cena numeric
+);
+
+INSERT INTO XPmenu (nazov, cena)
+VALUES ('Ryza s reznom', 5.99), ('Spagety so syrovou omackou', 4.99);
+
+
+DROP TABLE IF EXISTS XPobjednavky CASCADE;
+CREATE TABLE XPobjednavky
+(
+	id serial primary key,
+	stol_id integer references XPstol(id),
+	jedlo_id integer references XPmenu(id),
+	pocet_objednanych integer,
+	pocet_urobenych integer,
+	pocet_zaplatenych integer
+);
+
+INSERT INTO XPobjednavky (stol_id, jedlo_id, pocet_objednanych, pocet_urobenych, pocet_zaplatenych)
+VALUES (1, 1, 5, 2, 0), (1, 2, 4, 0, 3),
+       (2, 1, 1, 0, 0),
+       (4, 2, 2, 1, 1),
+       (5, 1, 2, 1, 0), (5, 2, 2, 1, 0);

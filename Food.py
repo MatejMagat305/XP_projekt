@@ -21,13 +21,16 @@ class FoodDatabase:
         self.all_food = list()
 
         if file is None:
-            file = 'List_of_meals.txt'
+            file = 'list_of_meals.txt'
 
+        self.load_food_from_file(file)
+
+    def load_food_from_file(self, file):
         try:
             with open(file) as input_file:
                 for riadok in input_file:
                     if ',' in riadok:
-                        food_name, food_cost = riadok.split(',')
+                        food_name, food_cost = riadok.strip().split(',')
                         food = Food(food_name.lower().capitalize(), food_cost)
                         self.all_food.append(food)
         except FileNotFoundError:
@@ -43,9 +46,17 @@ class FoodDatabase:
                 return True
         return False
 
+    def load(self):
+        # Kebyze chceme nacitavat udaje z DB
+        pass
+
+    def get_all_food(self):
+        return self.all_food
+    
+
 bol = False
 try:
-    database = FoodDatabase('List_of_meals.tx')
+    database = FoodDatabase('list_of_meals.tx')
 except FileNotFoundError:
     bol = True
 TEST(bol, True, 'test konstruktora')
