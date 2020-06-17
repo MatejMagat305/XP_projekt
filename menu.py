@@ -1,7 +1,7 @@
 from menu_waitress import menu_waitress
 from menu_cook import menu_cook
 from menu_admin import menu_admin
-
+from get_answer import get_answer
 
 class menu:
     waitress_menu = 1
@@ -25,7 +25,7 @@ class menu:
     def start(self):
         while True:
             self.print_menu()
-            answer = self.get_answer()
+            answer = get_answer().get()
             if answer == self.waitress_menu:
                 self.w.start()
             elif answer == self.cook_menu:
@@ -38,13 +38,6 @@ class menu:
             else:
                 print(self.error)
 
-
-    def get_answer(self):
-        while True:
-            try:
-                return int(input("Akcia> "))
-            except ValueError:
-                print(self.bad_input)
 
 
     def print_menu(self):
