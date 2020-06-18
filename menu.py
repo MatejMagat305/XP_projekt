@@ -9,12 +9,11 @@ class menu:
     admin_menu = 3
     finish_menu = 4
     error = "chyba nepoznám príkaz"
-    welcome = "vitaj v systeme"
+    welcome = "vytaj v systeme"
     wiatress = "ak chceš vojsť do menu pre časníkov zadaj: {}"
     cook = "ak chceš vojsť do menu pre kuhárov zadaj: {}"
     admin = "ak chceš vojsť do menu pre admina zadaj: {}"
     finish = "ak chceš ukončiť program zadaj: {}"
-    bad_input = "nezadal si číslo! skúš ešte raz"
     exit0 = "system sa zatvára"
     def __init__(self):
         self.w = menu_waitress()

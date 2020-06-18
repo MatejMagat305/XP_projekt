@@ -19,7 +19,9 @@ class fake_Conection_database(Connection):
         self.increment+=1
 
     def executeQuery(self, script, inserted_values):
-       if self.good_sql_query_script == script:
-           return list([self.values.get(inserted_values,None)])
+       l= self.good_sql_query_script
+       if l == script:
+           x =  list([self.values.get(inserted_values,None)])
+           return [x]
        return []
 

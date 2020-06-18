@@ -36,7 +36,7 @@ class TestStringMethods(unittest.TestCase):
         sys.stdin = sys.__stdin__
         sys.stdout= sys.__stdout__
 
-    def test_regist_kuchar(self):
+    def test_regist_kuchar_throw(self):
         i = 1
         try:
             sys.stdout= StringIO()
@@ -54,7 +54,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(i,0)
 
 
-    def test_regist_casnik(self):
+    def test_regist_casnik_throw(self):
         i = 1
         try:
             sys.stdout= StringIO()
@@ -79,9 +79,9 @@ class TestStringMethods(unittest.TestCase):
         sys.stdout= StringIO()
         sys.stdin = StringIO('y\n'+meno+'\n'+heslo)        
         LK.connection =  R.connection
-        LK.connection.good_sql_query_script ="\nselect id from xpcasnici where meno= %s and heslo= ''|| %s"
+        LK.connection.good_sql_query_script ="select id from xpkuchari where meno= %s and heslo=%s"
         self.assertEqual(LK.log_in(),1)
-        self.assertEqual(sys.stdout.getvalue(), "naozaj sa chces prihlásiť ako časník? ak ano zadaj: Y, ak nie zadaj: N\nzadaj meno:zadaj heslo:ste prihlaseny\n")
+        self.assertEqual(sys.stdout.getvalue(), "naozaj sa chces prihlásiť ako kuchar? ak ano zadaj: Y, ak nie zadaj: N\nzadaj meno:zadaj heslo:ste prihlaseny\n")
         sys.stdin = sys.__stdin__
         sys.stdout= sys.__stdout__
 

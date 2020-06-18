@@ -18,17 +18,18 @@ ak chceš vojsť do menu pre kuhárov zadaj: 2
 ak chceš vojsť do menu pre admina zadaj: 3
 ak chceš ukončiť program zadaj: 4
 """
+akcia= "Akcia> " 
 error = "chyba nepoznám príkaz\n"
 bad_input = "nezadal si číslo! skúš ešte raz\n"
 
 class TestStringMethods(unittest.TestCase):
     values = [
-        (standart+exit0) ,
-        (standart+w+standart+exit0),
-        (standart+c+standart+exit0),
-        (standart+a+standart+exit0),
-        (standart+bad_input+exit0),
-        (standart+error+standart+exit0)
+        (standart+akcia+exit0) ,
+        (standart+akcia+w+standart+akcia+exit0),
+        (standart+akcia+c+standart+akcia+exit0),
+        (standart+akcia+a+standart+akcia+exit0),
+        (standart+akcia+bad_input+akcia+exit0),
+        (standart+akcia+error+standart+akcia+exit0)
         ]
         
     def init_menu(self):
