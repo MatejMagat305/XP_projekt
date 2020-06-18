@@ -1,12 +1,12 @@
-1_Penne so syrovou omackou,9.49
-1_Ryzove rezance s kuracim masom,5.49
-1_Rezen s hranolkami,5.99
-1_Spagety s hovadzim ragu,7.99
-2_Penne so syrovou omackou,9.49
-2_Ryzove rezance s kuracim masom,5.49
-2_Rezen s hranolkami,5.99
-2_Spagety s hovadzim ragu,7.99
-3_Penne so syrovou omackou,9.49
-3_Ryzove rezance s kuracim masom,5.49
-3_Rezen s hranolkami,5.99
-3_Spagety s hovadzim ragu,7.99
+Penne so syrovou omackou,9.49
+Ryzove rezance s kuracim masom,5.49
+Rezen s hranolkami,5.99
+Spagety s hovadzim ragu,7.99
+Penne so syrovou omackou,9.49
+Ryzove rezance s kuracim masom,5.49
+Rezen s hranolkami,5.99
+Spagety s hovadzim ragu,7.99
+Penne so syrovou omackou,9.49
+Ryzove rezance s kuracim masom,5.49
+Rezen s hranolkami,5.99
+Spagety s hovadzim ragu,7.99
