@@ -1,4 +1,4 @@
-from Conection_database import Connection
+from Connection_database import Connection
 from TestExceptions import NotLogIn
 from get_string import get_string
 

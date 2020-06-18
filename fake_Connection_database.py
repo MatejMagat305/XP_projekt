@@ -1,5 +1,5 @@
 
-from Conection_database import Connection
+from Connection_database import Connection
 from TestExceptions import ConnectionError
 
 class fake_Conection_database(Connection):

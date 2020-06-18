@@ -1,0 +1,14 @@
+insert into xpmenu (nazov, cena)
+VALUES ('spagety s kecupom, cibulou, nastrúhaným syrom a s tuniakom', 4.50),
+       ('boloneze spagety', 5.30),
+       ('spagety s dusenou zeleninou', 3.70),
+       ('spagety poliate olivovým olejom s cuketou', 3.60),
+       ('spagety s duseným baklažánom', 4.20),
+       ('spagety na čínsky spôsob', 5.15),
+       ('spagety na indický spôsob', 5.70),
+       ('spagety na Amarický spôsob',3.05),
+       ('lokše s kuracou pečienkou',6.75),
+       ('lokše na sladko',6.05),
+       ('pečený moriak na smotane',3.35),
+       ('hovädzí vývar', 4.00),
+       ('kurací vývar', 3.10)

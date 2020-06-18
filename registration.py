@@ -1,6 +1,6 @@
 
 
-from Conection_database import Connection
+from Connection_database import Connection
 from get_Boolean import get_Boolean
 from get_string import get_string
 
