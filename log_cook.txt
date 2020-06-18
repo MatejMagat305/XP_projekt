@@ -1,2 +1,1 @@
-
-select id from xpcasnici where meno= %s and heslo= ''|| %s
+select id from xpkuchari where meno= %s and heslo=%s

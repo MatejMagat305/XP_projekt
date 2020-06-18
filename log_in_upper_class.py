@@ -14,5 +14,5 @@ class log_in:
         id0 = self.connection.executeQuery(self.scipt_log_in, tuple([name, password]))
         if id0!=None and len(id0)>0 and id0[0]!=None:
             print("ste prihlaseny")
-            return id0[0]
+            return id0[0][0]
         raise NotLogIn("nie je taky")
