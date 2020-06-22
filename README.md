@@ -13,13 +13,17 @@ Máme urobiť Kartičky číslo 1,2,3,4,5,8,9,10,11,12,16 Cize urobit:
 - card 02
 - card 03
 - card 04
+- card 05
 - card 09 
 - card 10 
 - card 11
 - (hlavne menu)
+- card 08
+- card 12
+- card 16
 # kto zatial urobil ake karticky:
-- Matej - karticky 1,2,3,4, 5, (16)
- (hlavne menu + menu kuchára)
+- Matej - karticky 1,2,3,4, 5, (16), (hlavne menu + menu kuchára)
+
 - Feri - karticky 9,10,11
 
 - Marek - 8, 12,(16)
