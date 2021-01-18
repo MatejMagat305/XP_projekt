@@ -7,12 +7,7 @@ class Connection:
 
     def __init__(self):
         try:
-            self.connection_pool = psycopg2.pool.SimpleConnectionPool(1, 20,
-                                          user="magat4@uniba.sk",
-                                          password="543210",
-                                          host="db.dai.fmph.uniba.sk",
-                                          port="5432",
-                                          database="playground")
+            
             if self.connection_pool==None:
                 raise ConnectionError("Connection failed.")
                 
